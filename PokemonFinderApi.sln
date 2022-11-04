@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonFinder.Api", "PokemonFinder.Api\PokemonFinder.Api.csproj", "{8E1341A3-F61D-4959-AA57-19191DC13AF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BCCDD95B-3440-43C8-9F1D-B68CE6FF3E0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonFinder.Core", "PokemonFinder.Core\PokemonFinder.Core.csproj", "{278D4C46-1FDA-4706-BEC5-76C359D1DB49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{8DF18817-D28D-478D-898B-B4E8BF37EDAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrations.Pokemon", "Integrations.Pokemon\Integrations.Pokemon.csproj", "{88ED7916-62C5-4B56-8E87-1B044E64ABA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrations.FunTranslations", "Integrations.FunTranslations\Integrations.FunTranslations.csproj", "{88130D80-C905-470C-BBF5-2EA20B46AB74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E1341A3-F61D-4959-AA57-19191DC13AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1341A3-F61D-4959-AA57-19191DC13AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1341A3-F61D-4959-AA57-19191DC13AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1341A3-F61D-4959-AA57-19191DC13AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278D4C46-1FDA-4706-BEC5-76C359D1DB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278D4C46-1FDA-4706-BEC5-76C359D1DB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278D4C46-1FDA-4706-BEC5-76C359D1DB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278D4C46-1FDA-4706-BEC5-76C359D1DB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88ED7916-62C5-4B56-8E87-1B044E64ABA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ED7916-62C5-4B56-8E87-1B044E64ABA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ED7916-62C5-4B56-8E87-1B044E64ABA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ED7916-62C5-4B56-8E87-1B044E64ABA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{278D4C46-1FDA-4706-BEC5-76C359D1DB49} = {BCCDD95B-3440-43C8-9F1D-B68CE6FF3E0A}
+		{88ED7916-62C5-4B56-8E87-1B044E64ABA2} = {8DF18817-D28D-478D-898B-B4E8BF37EDAD}
+		{88130D80-C905-470C-BBF5-2EA20B46AB74} = {8DF18817-D28D-478D-898B-B4E8BF37EDAD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A1ED015-13E8-442E-98D8-84D2C0769374}
+	EndGlobalSection
+EndGlobal
