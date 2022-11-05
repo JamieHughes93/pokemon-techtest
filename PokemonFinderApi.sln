@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrations.Pokemon", "Int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrations.FunTranslations", "Integrations.FunTranslations\Integrations.FunTranslations.csproj", "{88130D80-C905-470C-BBF5-2EA20B46AB74}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DE6EC566-CB42-4416-BFB5-3D99888F9B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFinder.Tests", "PokemonFinder.Tests\PokemonFinder.Tests.csproj", "{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88130D80-C905-470C-BBF5-2EA20B46AB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +53,7 @@ Global
 		{278D4C46-1FDA-4706-BEC5-76C359D1DB49} = {BCCDD95B-3440-43C8-9F1D-B68CE6FF3E0A}
 		{88ED7916-62C5-4B56-8E87-1B044E64ABA2} = {8DF18817-D28D-478D-898B-B4E8BF37EDAD}
 		{88130D80-C905-470C-BBF5-2EA20B46AB74} = {8DF18817-D28D-478D-898B-B4E8BF37EDAD}
+		{49FC47FC-6237-42D2-9F2F-467A7E6F1BD6} = {DE6EC566-CB42-4416-BFB5-3D99888F9B90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A1ED015-13E8-442E-98D8-84D2C0769374}

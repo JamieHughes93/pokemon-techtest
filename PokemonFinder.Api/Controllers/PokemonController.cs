@@ -13,14 +13,11 @@ namespace PokemonFinder.Api.Controllers
     [Route("[controller]")]
     public class PokemonController : ControllerBase
     {
-
-        private readonly ILogger<PokemonController> _logger;
         private readonly IPokemonService _pokemonService;
         private readonly IFunTranslationsService _funTranslationsService;
 
-        public PokemonController(ILogger<PokemonController> logger, IPokemonService pokemonService, IFunTranslationsService funTranslationsService)
+        public PokemonController(IPokemonService pokemonService, IFunTranslationsService funTranslationsService)
         {
-            _logger = logger;
             _pokemonService = pokemonService;
             _funTranslationsService = funTranslationsService;
         }
