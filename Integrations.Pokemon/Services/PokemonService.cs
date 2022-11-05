@@ -35,7 +35,7 @@ namespace Integrations.Pokemon.Services
                 {
                     Method = RequestMethod.Get,
                     AuthorizationType = AuthorizationType.Anonymous,
-                    EndPoint = _config.Endpoint + name
+                    EndPoint = _config.Endpoint + name?.ToLower()
                 };
 
                 var result = await _client.MakeRequest<PokeApiPokemonResponseModel>(request);
@@ -56,7 +56,7 @@ namespace Integrations.Pokemon.Services
             catch(Exception ex)
             {
                 _logger.LogError(ex, $"Error when retrieving pokemon {name}");
-                return null;
+                throw;
             }
         }
     }

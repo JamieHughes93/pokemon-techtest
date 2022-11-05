@@ -68,13 +68,6 @@ namespace PokemonFinder.Core.Clients.Implementations
                 }
                 catch (Exception ex)   
                 {
-                    response = new ApiResponse<TResponse>()
-                    {
-                        Success = false,
-                        Response = default,
-                        Message = ex.Message
-                    };
-
                     throw;
                 }
             }
