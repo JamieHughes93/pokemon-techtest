@@ -28,6 +28,6 @@ These can be run inside [Visual Studio 2022](https://visualstudio.microsoft.com/
 
 This solution was created using the ASP .NET Core Web API template in Visual Studio and then structured in a way that prioritised readability and reusability.
 
-The Core library contained classes that were used across all projects, and each API integration was put in its own project so that it was extendable and easy to find Models and Services etc for that integration.
+The Core library contained classes that were used across all projects, and each API integration was put in its own project so that it was extensible and easy to find Models and Services etc for that integration.
 
 The overall project was built with extensibility in mind, for example, if other calls needed to be made to the PokeApi, this could easily be done by adding a new method to the PokemonService which will then make use of the RestClient that is already implemented. Likewise if there was a requirement for a new API to be introduced, a new project can be created in the Integrations solution folder and make use of the existing RestClient by inheriting from the IAPIRequest interface.
