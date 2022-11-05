@@ -1,3 +1,6 @@
+using Integrations.FunTranslations.Config;
+using Integrations.FunTranslations.Interfaces;
+using Integrations.FunTranslations.Services;
 using Integrations.Pokemon.Config;
 using Integrations.Pokemon.Interfaces;
 using Integrations.Pokemon.Services;
@@ -7,6 +10,7 @@ using PokemonFinder.Core.Clients.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<PokeApiConfig>(builder.Configuration.GetSection(typeof(PokeApiConfig).Name));
+builder.Services.Configure<FunTranslationsApiConfig>(builder.Configuration.GetSection(typeof(FunTranslationsApiConfig).Name));
 
 // Add services to the container.
 
@@ -19,6 +23,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IRestClient, RestClient>();
 builder.Services.AddSingleton<IPokemonService, PokemonService>();
+builder.Services.AddSingleton<IFunTranslationsService, FunTranslationsService>();
 
 
 var app = builder.Build();

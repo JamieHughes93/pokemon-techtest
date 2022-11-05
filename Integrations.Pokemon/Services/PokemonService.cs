@@ -34,7 +34,6 @@ namespace Integrations.Pokemon.Services
                 var request = new PokeApiRequestModel()
                 {
                     Method = RequestMethod.Get,
-                    AuthorizationType = AuthorizationType.Anonymous,
                     EndPoint = _config.Endpoint + name?.ToLower()
                 };
 

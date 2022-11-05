@@ -11,22 +11,12 @@ namespace PokemonFinder.Core.Models.Requests
     {
         object RequestObject { get; set; }
         string EndPoint { get; set; }
-        AuthorizationType AuthorizationType { get; set; }
         RequestMethod Method { get; set; }
-    }
-
-    public enum AuthorizationType
-    {
-        Anonymous,
-        Basic,
-        Bearer
     }
 
     public enum RequestMethod
     {
         Get,
-        GetWithParams,
-        Post,
-        Patch
+        Post
     }
 }

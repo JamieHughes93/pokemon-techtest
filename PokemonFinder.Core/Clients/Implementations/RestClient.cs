@@ -39,9 +39,10 @@ namespace PokemonFinder.Core.Clients.Implementations
                         case RequestMethod.Get:
                             webResponse = await httpClient.GetAsync(request.EndPoint);
                             break;
-                        case RequestMethod.GetWithParams:
                         case RequestMethod.Post:
-                        case RequestMethod.Patch:
+                            var requestJson = new StringContent(JsonConvert.SerializeObject(request.RequestObject), Encoding.UTF8, "application/json");
+                            webResponse = await httpClient.PostAsync(request.EndPoint, requestJson);
+                            break;
                         default:
                             break;
                     }

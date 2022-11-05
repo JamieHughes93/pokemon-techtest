@@ -6,14 +6,12 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Integrations.Pokemon.Models.Requests
+namespace Integrations.FunTranslations.Models.Requests
 {
-    public class PokeApiRequestModel : IAPIRequest
+    public class FunTranslationsApiRequestModel : IAPIRequest
     {
         public object RequestObject { get; set; }
         public string EndPoint { get; set; }
-        public SecurityProtocolType SecurityProtocol { get; set; }
-        public AuthorizationType AuthorizationType { get; set; }
         public RequestMethod Method { get; set; }
     }
 }
