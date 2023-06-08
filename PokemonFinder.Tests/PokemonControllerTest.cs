@@ -3,6 +3,7 @@ using Integrations.Pokemon.Interfaces;
 using Integrations.Pokemon.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
 using PokemonFinder.Api.Controllers;
+using PokemonFinder.Tests.Helpers;
 using PokemonFinder.Tests.Services;
 
 namespace PokemonFinder.Tests
@@ -64,7 +65,7 @@ namespace PokemonFinder.Tests
             var pokemon = result?.Value as PokemonModel;
 
             //Assert
-            Assert.IsType<OkObjectResult>(actionResult as OkObjectResult);
+            Assert.IsType<OkObjectResult>(result);
             Assert.Contains("Shakespeare", pokemon?.Description);
         }
 

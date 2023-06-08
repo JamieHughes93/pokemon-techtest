@@ -1,7 +1,9 @@
 ﻿using Integrations.FunTranslations.Interfaces;
 using Integrations.FunTranslations.Models.Response;
+using PokemonFinder.Tests.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,13 +12,20 @@ namespace PokemonFinder.Tests.Services
 {
     public class FunTranslationsServiceFake : IFunTranslationsService
     {
+        private readonly RateLimiterHelperFake rateLimiterHelper;
+
         public FunTranslationsServiceFake()
         {
-            
+            rateLimiterHelper = new RateLimiterHelperFake(5, 60);
         }
 
         public async Task<string> GetFunTranslation(string text, string translationType)
         {
+            if (!rateLimiterHelper.CanMakeRequest())
+            {
+                return text;
+            }
+
             var translationResponses = new List<FunTranslationResponse>
             {
                 new FunTranslationResponse

@@ -53,6 +53,8 @@ namespace Integrations.FunTranslations.Services
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex, "Rate limit reached");
+
                 return text;
             }
         }
