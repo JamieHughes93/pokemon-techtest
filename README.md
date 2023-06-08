@@ -16,7 +16,7 @@ With limited prior experience with Docker, an attempt was made to get the API ru
 
 Using the command ```docker build -t pokemonfinder.api:latest .``` when having the Powershell window open in the PokemonFinder folder, this built the Docker Image.
 
-Attempting to run the API using the commnand ```docker run -p 8080:8080 pokemonfinder.api:latest pokemon``` does claim to allow the API to be run on localhost, but it seems I was unable to get the port running properly.
+Running the API using the commnand ```docker run -p 8080:80 pokemonfinder.api:latest pokemon``` claims to allow the API to be run on localhost.
 
 ## Testing
 
