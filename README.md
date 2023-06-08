@@ -1,4 +1,4 @@
-# Truelayer Tech Test - Pokemon Finder API
+# Tech Test - Pokemon Finder API
 
 This tech test has been implemented in C# and .NET 6.0 using Visual Studio 2022 and tested on Windows 10.
 
